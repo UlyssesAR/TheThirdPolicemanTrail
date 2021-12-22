@@ -8,11 +8,43 @@
 import SwiftUI
 import RealityKit
 
-struct ContentView : View {
+struct ContentView: View {
+    var body: some View {
+        
+        Home()
+    }
+}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
+struct Home : View {
+    var body: some View {
+        ZStack{
+            VStack{
+                HStack{
+                    Text("The Third Policeman Trail")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    Spacer()
+                    
+                    Text("1/5")
+                        .foregroundColor(.gray)
+                }
+                .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
+                .padding()
+            }
+        }
+    }
+}
+ 
+/*struct ContentView : View {
     var body: some View {
         return ARViewContainer().edgesIgnoringSafeArea(.all)
     }
-}
+}*/
 
 struct ARViewContainer: UIViewRepresentable {
     
