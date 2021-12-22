@@ -15,6 +15,7 @@
 		50677CF42772BD06002302ED /* TheThirdPolicemanTrailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677CF32772BD06002302ED /* TheThirdPolicemanTrailTests.swift */; };
 		50677CFE2772BD06002302ED /* TheThirdPolicemanTrailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677CFD2772BD06002302ED /* TheThirdPolicemanTrailUITests.swift */; };
 		50677D002772BD06002302ED /* TheThirdPolicemanTrailUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677CFF2772BD06002302ED /* TheThirdPolicemanTrailUITestsLaunchTests.swift */; };
+		50677D0D2772BE8A002302ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677D0C2772BE8A002302ED /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		50677CF92772BD06002302ED /* TheThirdPolicemanTrailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheThirdPolicemanTrailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50677CFD2772BD06002302ED /* TheThirdPolicemanTrailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheThirdPolicemanTrailUITests.swift; sourceTree = "<group>"; };
 		50677CFF2772BD06002302ED /* TheThirdPolicemanTrailUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheThirdPolicemanTrailUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		50677D0C2772BE8A002302ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				50677CE02772BD02002302ED /* AppDelegate.swift */,
 				50677CE22772BD02002302ED /* ContentView.swift */,
+				50677D0C2772BE8A002302ED /* SceneDelegate.swift */,
 				50677CE42772BD02002302ED /* Experience.rcproject */,
 				50677CE62772BD05002302ED /* Assets.xcassets */,
 				50677CE82772BD05002302ED /* Preview Content */,
@@ -263,6 +266,7 @@
 				50677CE32772BD02002302ED /* ContentView.swift in Sources */,
 				50677CE12772BD02002302ED /* AppDelegate.swift in Sources */,
 				50677CE52772BD02002302ED /* Experience.rcproject in Sources */,
+				50677D0D2772BE8A002302ED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
