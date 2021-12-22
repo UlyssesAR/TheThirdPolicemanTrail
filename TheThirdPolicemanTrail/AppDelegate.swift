@@ -4,7 +4,7 @@
 //
 //  Created by Sarah Kim on 12/21/21.
 //
-import UIKit
+/*import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -31,9 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
-}
+}*/
 
-/*import UIKit
+import UIKit
 import SwiftUI
 
 @main
@@ -73,5 +73,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
-}*/
+}
 

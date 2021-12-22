@@ -5,7 +5,7 @@
 //  Created by Sarah Kim on 12/21/21.
 //
 
-import UIKit
+/*import UIKit
 import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -59,4 +59,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
 
-}
+}*/
