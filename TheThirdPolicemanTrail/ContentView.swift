@@ -57,7 +57,7 @@ struct Home : View {
     
     var body: some View {
         ZStack{
-            VStack{
+           VStack{
                 HStack{
                     Text("The Third Policeman Trail")
                         .font(.title)
@@ -75,7 +75,13 @@ struct Home : View {
                 }
                 .padding(.bottom, (UIApplication.shared.windows.first?.safeAreaInsets.bottom)! + 10)
             }
+            
+        .opacity(self.show ? 0 : 1)
+        ExpandView(data: self.data [self.index], show: self.$show)
+        .scaleEffect(self.show ? 1 : 0)
+        .frame(width: self.show ? nil : 0, height: self.show ? nil : 0)
         }
+    
         .background(Color.black.opacity(0.07).edgesIgnoringSafeArea(.all))
         .edgesIgnoringSafeArea(.all)
     }
@@ -100,6 +106,12 @@ struct HScrollView : View {
                         .frame(width: self.size.width - 30, height: self.size.height).cornerRadius(25)
                         // fix extra spacing
                         .contentShape (Rectangle())
+                        .onTapGesture {
+                            withAnimation{
+                                
+                                self.show.toggle()
+                            }
+                        }
                     
                     VStack (alignment: .leading, spacing: 12){
                         
@@ -113,6 +125,7 @@ struct HScrollView : View {
                             
                             Text (i.country)
                                 .foregroundColor(.gray)
+                            
                             
                         }
                         
@@ -128,7 +141,95 @@ struct HScrollView : View {
         }
     }
 }
+//ExpandView
 
+struct ExpandView : View {
+    @State var data : TravelData
+    @Binding var show : Bool
+    
+    var body: some View{
+        
+        VStack{
+            // dismiss button
+            ZStack(alignment: .topTrailing){
+                
+                Image (self.data.image)
+                    .resizable()
+                    .cornerRadius(25)
+                Button (action: {
+                    //closing expansion
+                    
+                    withAnimation{
+                        self.show.toggle()
+                    }
+                }){
+                    
+                    Image (systemName: "xmark")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.black.opacity(0.7))
+                        .clipShape(Circle())
+                }
+                .padding(.trailing)
+                .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)! + 10)
+            }
+          /*  Image(self.data.image)
+                .resizable()
+                .cornerRadius(25)*/
+            VStack (alignment: .leading, spacing: 12){
+                
+                Text (self.data.place)
+                    .font(.title)
+                    .fontWeight(.bold)
+                
+                HStack(spacing: 12){
+                    Image(systemName: "mappin.circle.fill")
+                        .font(.system(size: 25, weight: .bold))
+                    
+                    Text (self.data.country)
+                        //.foregroundColor(.gray)
+                    
+                    
+                }
+                
+                Text (self.data.details)
+                
+            }
+            .padding(.horizontal,25)
+            .padding(.bottom,20)
+            .foregroundColor(.black)
+            .padding(.top)
+            
+            HStack{
+                HStack{
+                    
+                    Text ("clue")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    
+                    Text ("(next)")
+                        .font(.title)
+                                        }
+            }
+            
+            .padding(.leading, 30)
+            
+            Spacer()
+            
+            Button(action: {
+                
+            }) {
+                Text("AR Experience")
+                    .foregroundColor(.white)
+                    .font(.system(size: 22))
+                    .padding(.vertical, 25)
+                    .frame(width: UIScreen.main.bounds.width / 2.5)
+                    .background(Color("Color"))
+                    .clipShape(CShape())
+            }
+        }
+    }
+}
 struct Carousel : UIViewRepresentable {
     func makeCoordinator() -> Coordinator {
         return Carousel.Coordinator(parent1:self)
@@ -195,6 +296,23 @@ struct TravelData : Identifiable {
     var place : String
     var details : String
 }
+
+struct CShape : Shape {
+    func path (in rect: CGRect) -> Path {
+        
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: [.topLeft, .bottomRight], cornerRadii: CGSize(width: 55, height: 55))
+        
+        return Path(path.cgPath)
+    }
+}
+
+class Host : UIHostingController<ContentView>{
+    
+    override var prefersHomeIndicatorAutoHidden: Bool{
+        
+        return true
+    }
+}
  
 
 /*struct ContentView : View {
@@ -230,3 +348,4 @@ struct ContentView_Previews : PreviewProvider {
     }
 }
 #endif*/
+
