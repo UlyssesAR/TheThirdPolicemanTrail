@@ -64,7 +64,7 @@ struct Home : View {
                         .fontWeight(.bold)
                     Spacer()
                     
-                    Text("1/12")
+                    Text("\(self.index+1)/\(self.data.count)")
                         .foregroundColor(.gray)
                 }
                 .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
@@ -94,12 +94,34 @@ struct HScrollView : View {
     var body: some View{
         HStack(spacing: 0){
             ForEach(self.data) {i in
-                ZStack {
+                ZStack (alignment: .bottom){
                     
                     Image(i.image).resizable().aspectRatio(1, contentMode: .fill)
                         .frame(width: self.size.width - 30, height: self.size.height).cornerRadius(25)
                         // fix extra spacing
                         .contentShape (Rectangle())
+                    
+                    VStack (alignment: .leading, spacing: 12){
+                        
+                        Text (i.place)
+                            .font(.title)
+                            .fontWeight(.bold)
+                        
+                        HStack(spacing: 12){
+                            Image(systemName: "mappin.circle.fill")
+                                .font(.system(size: 25, weight: .bold))
+                            
+                            Text (i.country)
+                                .foregroundColor(.gray)
+                            
+                        }
+                        
+                        Text (i.details)
+                        
+                    }
+                    .padding(.horizontal,25)
+                    .padding(.bottom,20)
+                    .foregroundColor(.white)
                 }
                 .frame(width: self.size.width, height: self.size.height)
             }
@@ -108,6 +130,10 @@ struct HScrollView : View {
 }
 
 struct Carousel : UIViewRepresentable {
+    func makeCoordinator() -> Coordinator {
+        return Carousel.Coordinator(parent1:self)
+    }
+    
     
     @Binding var data : [TravelData]
     @Binding var index : Int
@@ -127,12 +153,35 @@ struct Carousel : UIViewRepresentable {
         view.showsVerticalScrollIndicator = false
         view.showsHorizontalScrollIndicator = false
         view.isPagingEnabled = true
-        
+        view.delegate = context.coordinator
         return view
     }
     
+    // updates size with new data
     func updateUIView(_ uiView: UIScrollView, context: Context) {
+        for i in 0..<uiView.subviews.count{
+            
+            uiView.subviews[i].frame = CGRect (x: 0, y: 0, width: size.width * CGFloat(data.count), height: size.height)
+        }
         
+        uiView.contentSize = CGSize (width: size.width * CGFloat(data.count), height: size.height)
+    }
+    
+    class Coordinator: NSObject, UIScrollViewDelegate {
+        
+        var parent : Carousel
+        
+        init(parent1 : Carousel) {
+            
+            parent = parent1
+        }
+        
+        func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+            
+            let index = Int (scrollView.contentOffset.x / UIScreen.main.bounds.width)
+            
+            parent.index = index
+        }
     }
 }
 
