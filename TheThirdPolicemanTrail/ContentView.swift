@@ -77,7 +77,7 @@ struct Home : View {
             }
             
         .opacity(self.show ? 0 : 1)
-        ExpandView(data: self.data [self.index], show: self.$show)
+        ExpandView(data: self.$data[self.index], show: self.$show)
         .scaleEffect(self.show ? 1 : 0)
         .frame(width: self.show ? nil : 0, height: self.show ? nil : 0)
         }
@@ -144,7 +144,7 @@ struct HScrollView : View {
 //ExpandView
 
 struct ExpandView : View {
-    @State var data : TravelData
+    @Binding var data : TravelData
     @Binding var show : Bool
     
     var body: some View{
