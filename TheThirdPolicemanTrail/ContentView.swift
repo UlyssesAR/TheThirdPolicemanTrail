@@ -201,32 +201,32 @@ struct ExpandView : View {
             .padding(.top)
             
             HStack{
-                HStack{
+                HStack (spacing: 15){
                     
                     Text ("clue")
                         .font(.title)
                         .fontWeight(.bold)
                     
-                    Text ("(next)")
-                        .font(.title)
+                    //Text ("(next)")
+                      //  .font(.title)
                                         }
-            }
-            
-            .padding(.leading, 30)
-            
-            Spacer()
-            
-            Button(action: {
+                .padding(.leading, 20)
                 
-            }) {
-                Text("AR Experience")
-                    .foregroundColor(.white)
-                    .font(.system(size: 22))
-                    .padding(.vertical, 25)
-                    .frame(width: UIScreen.main.bounds.width / 2.5)
-                    .background(Color("Color"))
-                    .clipShape(CShape())
+                Spacer ()
+                
+                Button(action: {
+                    
+                }) {
+                    Text("AR Experience")
+                        .foregroundColor(.white)
+                        .font(.system(size: 22))
+                        .padding(.vertical, 25)
+                        .frame(width: UIScreen.main.bounds.width / 2.5)
+                        .background(Color("Color"))
+                        .clipShape(CShape())
+                }
             }
+            
         }
     }
 }
