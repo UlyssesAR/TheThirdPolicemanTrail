@@ -23,29 +23,30 @@ struct ContentView_Previews: PreviewProvider {
 struct Home : View {
     @State var data = [
         
-        TravelData(id: 0, image: "yosemite", country: "USA", place: "Yosemite", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
+        SceneData(id: 0, image1: "Burns", image2 : "Maze", place: "Burns Liabrary Door", clue: "Start", quotes: "It was he who first knocked Old Mathers down with a special bicycle-pump which he manufactured himself out of a hollow iron bar", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida."),
         
-        TravelData(id: 1, image: "antelope", country: "Arizona", place: "Antelope Canyon", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida."),
+        SceneData(id: 1, image1: "yosemite", image2 : "Maze", place: "Labyrinth", clue: "Bicycle Pump",quotes: "I knew that old Mathers had been felled by an iron bicycle-pump, hacked to death with a heavy spade and then securely buried in a field.", details: "On September 11, 2003, a memorial labyrinth was dedicated to the 22 Boston College alumni lost in the 9/11 tragedy. The circle, a perfect form, can be seen as symbolizing eternity, the universe, the repetition of the seasons, the cosmos—the overall perfect plan of the divine. The path through the labyrinth constitutes the longest possible way to arrive at the center. It is important not to hurry the experience, but to submit to its structure and discipline."),
         
-        TravelData(id: 2, image: "azores", country: "Portugal", place: "Azores", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
         
-        TravelData(id: 3, image: "venice", country: "Italy", place: "Venice", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida."),
+        SceneData(id: 2, image1: "azores", image2 : "Maze", place: "Portugal", clue: "Azores",quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
         
-        TravelData(id: 4, image: "angelfalls", country: "Venezuela", place: "Angel Falls", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida."),
+        SceneData(id: 3, image1: "venice", image2 : "Maze", place: "Italy", clue: "Venice", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida."),
         
-        TravelData(id: 5, image: "yosemite", country: "USA", place: "Yosemite", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
+        SceneData(id: 4, image1: "angelfalls", image2 : "Maze", place: "Venezuela", clue: "Angel Falls",quotes: "",  details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida."),
         
-        TravelData(id: 6, image: "yosemite", country: "USA", place: "Yosemite", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
+        SceneData(id: 5, image1: "yosemite", image2 : "Maze", place: "USA", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
         
-        TravelData(id: 7, image: "yosemite", country: "USA", place: "Yosemite", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
+        SceneData(id: 6, image1: "yosemite", image2 : "Maze", place: "USA", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
         
-        TravelData(id: 8, image: "yosemite", country: "USA", place: "Yosemite", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
+        SceneData(id: 7, image1: "yosemite", image2 : "Maze", place: "USA", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
         
-        TravelData(id: 9, image: "yosemite", country: "USA", place: "Yosemite", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
+        SceneData(id: 8, image1: "yosemite", image2 : "Maze", place: "USA", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
         
-        TravelData(id: 10, image: "yosemite", country: "USA", place: "Yosemite", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
+        SceneData(id: 9, image1: "yosemite", image2 : "Maze", place: "USA", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
         
-        TravelData(id: 11, image: "yosemite", country: "USA", place: "Yosemite", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
+        SceneData(id: 10, image1: "yosemite", image2 : "Maze", place: "USA", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
+        
+        SceneData(id: 11, image1: "yosemite", image2 : "Maze", place: "USA", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
         
 
     ]
@@ -91,7 +92,7 @@ struct Home : View {
 
 struct HScrollView : View {
     
-    @Binding var data : [TravelData]
+    @Binding var data : [SceneData]
     
     //expanding view
     @Binding var show: Bool
@@ -102,8 +103,9 @@ struct HScrollView : View {
             ForEach(self.data) {i in
                 ZStack (alignment: .bottom){
                     
-                    Image(i.image).resizable().aspectRatio(1, contentMode: .fill)
-                        .frame(width: self.size.width - 30, height: self.size.height).cornerRadius(25)
+                    Image(i.image1).resizable().aspectRatio(1, contentMode: .fill)
+                        .frame(width: self.size.width - 30, height: self.size.height)
+                        .cornerRadius(25)
                         // fix extra spacing
                         .contentShape (Rectangle())
                         .onTapGesture {
@@ -115,26 +117,28 @@ struct HScrollView : View {
                     
                     VStack (alignment: .leading, spacing: 12){
                         
-                        Text (i.place)
+                        Text (i.clue)
                             .font(.title)
                             .fontWeight(.bold)
+                            
                         
                         HStack(spacing: 12){
                             Image(systemName: "mappin.circle.fill")
                                 .font(.system(size: 25, weight: .bold))
                             
-                            Text (i.country)
-                                .foregroundColor(.gray)
+                            Text (i.place)
+                               // .foregroundColor(.gray)
                             
                             
                         }
                         
-                        Text (i.details)
+                        Text (i.quotes)
                         
                     }
                     .padding(.horizontal,25)
                     .padding(.bottom,20)
                     .foregroundColor(.white)
+                    
                 }
                 .frame(width: self.size.width, height: self.size.height)
             }
@@ -144,7 +148,7 @@ struct HScrollView : View {
 //ExpandView
 
 struct ExpandView : View {
-    @Binding var data : TravelData
+    @Binding var data : SceneData
     @Binding var show : Bool
     
     var body: some View{
@@ -153,7 +157,7 @@ struct ExpandView : View {
             // dismiss button
             ZStack(alignment: .topTrailing){
                 
-                Image (self.data.image)
+                Image (self.data.image2)
                     .resizable()
                     .cornerRadius(25)
                 Button (action: {
@@ -165,9 +169,9 @@ struct ExpandView : View {
                 }){
                     
                     Image (systemName: "xmark")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .padding()
-                        .background(Color.black.opacity(0.7))
+                        .background(Color.white)
                         .clipShape(Circle())
                 }
                 .padding(.trailing)
@@ -178,7 +182,7 @@ struct ExpandView : View {
                 .cornerRadius(25)*/
             VStack (alignment: .leading, spacing: 12){
                 
-                Text (self.data.place)
+                Text (self.data.clue)
                     .font(.title)
                     .fontWeight(.bold)
                 
@@ -186,7 +190,7 @@ struct ExpandView : View {
                     Image(systemName: "mappin.circle.fill")
                         .font(.system(size: 25, weight: .bold))
                     
-                    Text (self.data.country)
+                    Text (self.data.place)
                         //.foregroundColor(.gray)
                     
                     
@@ -236,7 +240,7 @@ struct Carousel : UIViewRepresentable {
     }
     
     
-    @Binding var data : [TravelData]
+    @Binding var data : [SceneData]
     @Binding var index : Int
     @Binding var show : Bool
     
@@ -288,12 +292,14 @@ struct Carousel : UIViewRepresentable {
 
 //Sample data
 
-struct TravelData : Identifiable {
+struct SceneData : Identifiable {
     
     var id : Int
-    var image : String
-    var country : String
+    var image1 : String
+    var image2 : String
     var place : String
+    var clue : String
+    var quotes : String
     var details : String
 }
 
