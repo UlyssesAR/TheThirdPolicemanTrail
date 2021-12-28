@@ -23,30 +23,30 @@ struct ContentView_Previews: PreviewProvider {
 struct Home : View {
     @State var data = [
         
-        SceneData(id: 0, image1: "Burns", image2 : "Maze", place: "Burns Liabrary Door", clue: "Start", quotes: "It was he who first knocked Old Mathers down with a special bicycle-pump which he manufactured himself out of a hollow iron bar", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida."),
+        SceneData(id: 0, image1: "Burns", image2 : "Burns", place1: "Start",place2: "Burns Liabrary Door",title: "Click on this card to start!",clue: "", quotes: "It was he who first knocked Old Mathers down with a special bicycle-pump which he manufactured himself out of a hollow iron bar", details: "Welcome! Before you start, here are some instructions. Each point in the maze will have an information card (like this one). The front will have the name of the item along with a reference quote from The Third Policeman. Then, click on the card to see the image, the name, and a description about the location of the point you have to go to. Once you get to the location, press ‘AR Experience’ to find the item with your device and complete tasks to move on to the next point. Now, exit this screen with the ‘x’ button at the top right and swipe to get to the first point on the maze. Good Luck!"),
         
-        SceneData(id: 1, image1: "yosemite", image2 : "Maze", place: "Labyrinth", clue: "Bicycle Pump",quotes: "I knew that old Mathers had been felled by an iron bicycle-pump, hacked to death with a heavy spade and then securely buried in a field.", details: "On September 11, 2003, a memorial labyrinth was dedicated to the 22 Boston College alumni lost in the 9/11 tragedy. The circle, a perfect form, can be seen as symbolizing eternity, the universe, the repetition of the seasons, the cosmos—the overall perfect plan of the divine. The path through the labyrinth constitutes the longest possible way to arrive at the center. It is important not to hurry the experience, but to submit to its structure and discipline."),
+        SceneData(id: 1, image1: "mazeCover", image2 : "Maze", place1: "Point 1",place2: "Labyrinth", title: "Bicycle Pump", clue:"Find the Bicycle Pump",quotes: "I knew that old Mathers had been felled by an iron bicycle-pump, hacked to death with a heavy spade and then securely buried in a field.", details: "On September 11, 2003, a memorial labyrinth was dedicated to the 22 Boston College alumni lost in the 9/11 tragedy. The circle, a perfect form, can be seen as symbolizing eternity, the universe, the repetition of the seasons, the cosmos—the overall perfect plan of the divine. The path through the labyrinth constitutes the longest possible way to arrive at the center. It is important not to hurry the experience, but to submit to its structure and discipline."),
         
         
-        SceneData(id: 2, image1: "azores", image2 : "Maze", place: "Portugal", clue: "Azores",quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
+        SceneData(id: 2, image1: "azores", image2 : "Maze", place1: "Portugal",place2: "",title: "", clue: "Azores",quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
         
-        SceneData(id: 3, image1: "venice", image2 : "Maze", place: "Italy", clue: "Venice", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida."),
+        SceneData(id: 3, image1: "venice", image2 : "Maze", place1: "Italy",place2: "",title: "", clue: "Venice", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida."),
         
-        SceneData(id: 4, image1: "angelfalls", image2 : "Maze", place: "Venezuela", clue: "Angel Falls",quotes: "",  details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida."),
+        SceneData(id: 4, image1: "angelfalls", image2 : "Maze", place1: "Venezuela",place2: "", title: "", clue: "Angel Falls",quotes: "",  details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida."),
         
-        SceneData(id: 5, image1: "yosemite", image2 : "Maze", place: "USA", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
+        SceneData(id: 5, image1: "yosemite", image2 : "Maze", place1: "USA",place2: "", title: "", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
         
-        SceneData(id: 6, image1: "yosemite", image2 : "Maze", place: "USA", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
+        SceneData(id: 6, image1: "yosemite", image2 : "Maze", place1: "USA", place2: "",title: "", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
         
-        SceneData(id: 7, image1: "yosemite", image2 : "Maze", place: "USA", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
+        SceneData(id: 7, image1: "yosemite", image2 : "Maze", place1: "USA", place2: "",title: "", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
         
-        SceneData(id: 8, image1: "yosemite", image2 : "Maze", place: "USA", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
+        SceneData(id: 8, image1: "yosemite", image2 : "Maze", place1: "USA", place2: "",title: "", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
         
-        SceneData(id: 9, image1: "yosemite", image2 : "Maze", place: "USA", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
+        SceneData(id: 9, image1: "yosemite", image2 : "Maze", place1: "USA", place2: "",title: "",clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
         
-        SceneData(id: 10, image1: "yosemite", image2 : "Maze", place: "USA", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
+        SceneData(id: 10, image1: "yosemite", image2 : "Maze", place1: "USA", place2: "",title: "", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
         
-        SceneData(id: 11, image1: "yosemite", image2 : "Maze", place: "USA", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
+        SceneData(id: 11, image1: "yosemite", image2 : "Maze", place1: "USA", place2: "",title: "", clue: "Yosemite", quotes: "", details: "Sed libero enim sed faucibus turpis in eu mi. Elementum integer enim neque volutpat ac. Eget aliquet nibh praesent tristique magna sit amet. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Vel pretium lectus quam id. Sapien faucibus et molestie ac. Leo vel orci porta non pulvinar neque laoreet suspendisse. Nibh sed pulvinar proin gravida. "),
         
 
     ]
@@ -117,7 +117,7 @@ struct HScrollView : View {
                     
                     VStack (alignment: .leading, spacing: 12){
                         
-                        Text (i.clue)
+                        Text (i.title)
                             .font(.title)
                             .fontWeight(.bold)
                             
@@ -126,7 +126,7 @@ struct HScrollView : View {
                             Image(systemName: "mappin.circle.fill")
                                 .font(.system(size: 25, weight: .bold))
                             
-                            Text (i.place)
+                            Text (i.place1)
                                // .foregroundColor(.gray)
                             
                             
@@ -182,15 +182,10 @@ struct ExpandView : View {
                 .cornerRadius(25)*/
             VStack (alignment: .leading, spacing: 12){
                 
-                Text (self.data.clue)
-                    .font(.title)
-                    .fontWeight(.bold)
-                
                 HStack(spacing: 12){
                     Image(systemName: "mappin.circle.fill")
                         .font(.system(size: 25, weight: .bold))
-                    
-                    Text (self.data.place)
+                    Text (self.data.place2)
                         //.foregroundColor(.gray)
                     
                     
@@ -207,8 +202,8 @@ struct ExpandView : View {
             HStack{
                 HStack (spacing: 15){
                     
-                    Text ("clue")
-                        .font(.title)
+                    Text (self.data.clue)
+                        .font(.body)
                         .fontWeight(.bold)
                     
                     //Text ("(next)")
@@ -297,7 +292,9 @@ struct SceneData : Identifiable {
     var id : Int
     var image1 : String
     var image2 : String
-    var place : String
+    var place1 : String
+    var place2 : String
+    var title : String
     var clue : String
     var quotes : String
     var details : String
