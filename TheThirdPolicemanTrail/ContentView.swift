@@ -61,7 +61,7 @@ struct Home : View {
         ZStack{
            VStack{
                 HStack{
-                    Text("The Third Policeman Trail")
+                    Text("Pursuing The Third Policeman")
                         .font(.title)
                         .fontWeight(.bold)
                     Spacer()
