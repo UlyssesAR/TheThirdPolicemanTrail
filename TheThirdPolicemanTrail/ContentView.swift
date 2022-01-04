@@ -325,7 +325,7 @@ class Host : UIHostingController<ContentView>{
     }
 }*/
 
-/*struct ARViewContainer: UIViewRepresentable {
+struct ARViewContainer: UIViewRepresentable {
     
     func makeUIView(context: Context) -> ARView {
         
@@ -351,5 +351,5 @@ struct ContentView_Previews : PreviewProvider {
         ContentView()
     }
 }
-#endif*/
+#endif
 

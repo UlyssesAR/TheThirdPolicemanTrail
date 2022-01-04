@@ -17,6 +17,7 @@
 		50677D002772BD06002302ED /* TheThirdPolicemanTrailUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677CFF2772BD06002302ED /* TheThirdPolicemanTrailUITestsLaunchTests.swift */; };
 		50677D0D2772BE8A002302ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677D0C2772BE8A002302ED /* SceneDelegate.swift */; };
 		506DFA862784DAE7006F4C30 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506DFA852784DAE6006F4C30 /* Launch Screen.storyboard */; };
+		506DFA882784E8F4006F4C30 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 506DFA872784E8F3006F4C30 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		50677CFF2772BD06002302ED /* TheThirdPolicemanTrailUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheThirdPolicemanTrailUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		50677D0C2772BE8A002302ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		506DFA852784DAE6006F4C30 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		506DFA872784E8F3006F4C30 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../Downloads/OnTheTrailOfTheThirdPoliceman-main/OnTheTrailOfTheThirdPoliceman/OnTheTrailOfTheThirdPoliceman/Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				50677CE02772BD02002302ED /* AppDelegate.swift */,
 				50677CE22772BD02002302ED /* ContentView.swift */,
 				50677D0C2772BE8A002302ED /* SceneDelegate.swift */,
+				506DFA872784E8F3006F4C30 /* Info.plist */,
 				50677CE42772BD02002302ED /* Experience.rcproject */,
 				50677CE62772BD05002302ED /* Assets.xcassets */,
 				506DFA852784DAE6006F4C30 /* Launch Screen.storyboard */,
@@ -240,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				506DFA882784E8F4006F4C30 /* Info.plist in Resources */,
 				506DFA862784DAE7006F4C30 /* Launch Screen.storyboard in Resources */,
 				50677CEA2772BD05002302ED /* Preview Assets.xcassets in Resources */,
 				50677CE72772BD05002302ED /* Assets.xcassets in Resources */,
