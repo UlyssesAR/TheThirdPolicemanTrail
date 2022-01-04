@@ -16,6 +16,7 @@
 		50677CFE2772BD06002302ED /* TheThirdPolicemanTrailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677CFD2772BD06002302ED /* TheThirdPolicemanTrailUITests.swift */; };
 		50677D002772BD06002302ED /* TheThirdPolicemanTrailUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677CFF2772BD06002302ED /* TheThirdPolicemanTrailUITestsLaunchTests.swift */; };
 		50677D0D2772BE8A002302ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677D0C2772BE8A002302ED /* SceneDelegate.swift */; };
+		506DFA862784DAE7006F4C30 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506DFA852784DAE6006F4C30 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		50677CFD2772BD06002302ED /* TheThirdPolicemanTrailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheThirdPolicemanTrailUITests.swift; sourceTree = "<group>"; };
 		50677CFF2772BD06002302ED /* TheThirdPolicemanTrailUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheThirdPolicemanTrailUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		50677D0C2772BE8A002302ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		506DFA852784DAE6006F4C30 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				50677D0C2772BE8A002302ED /* SceneDelegate.swift */,
 				50677CE42772BD02002302ED /* Experience.rcproject */,
 				50677CE62772BD05002302ED /* Assets.xcassets */,
+				506DFA852784DAE6006F4C30 /* Launch Screen.storyboard */,
 				50677CE82772BD05002302ED /* Preview Content */,
 			);
 			path = TheThirdPolicemanTrail;
@@ -237,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				506DFA862784DAE7006F4C30 /* Launch Screen.storyboard in Resources */,
 				50677CEA2772BD05002302ED /* Preview Assets.xcassets in Resources */,
 				50677CE72772BD05002302ED /* Assets.xcassets in Resources */,
 			);
@@ -432,6 +436,7 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -462,6 +467,7 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
