@@ -40,6 +40,13 @@ struct ARViewContainer: UIViewRepresentable {
     
 }
 
+func openARScene() {
+    if let window = UIApplication.shared.windows.first {
+        window.rootViewController = UIHostingController(rootView: ARViewContainer().edgesIgnoringSafeArea(.all))
+        window.makeKeyAndVisible()
+    }
+}
+
 struct Home : View {
     @State var data = [
         
@@ -234,9 +241,7 @@ struct ExpandView : View {
                 
                 Spacer ()
                 
-                Button(action: {
-                    
-                }) {
+                Button(action: openARScene ) {
                     Text("AR Experience")
                         .foregroundColor(.white)
                         .font(.system(size: 22))
