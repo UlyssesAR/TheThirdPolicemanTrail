@@ -102,6 +102,7 @@
 		50677CDF2772BD02002302ED /* TheThirdPolicemanTrail */ = {
 			isa = PBXGroup;
 			children = (
+				506DFA892787DF54006F4C30 /* 3D Assets */,
 				50677CE02772BD02002302ED /* AppDelegate.swift */,
 				50677CE22772BD02002302ED /* ContentView.swift */,
 				50677D0C2772BE8A002302ED /* SceneDelegate.swift */,
@@ -137,6 +138,13 @@
 				50677CFF2772BD06002302ED /* TheThirdPolicemanTrailUITestsLaunchTests.swift */,
 			);
 			path = TheThirdPolicemanTrailUITests;
+			sourceTree = "<group>";
+		};
+		506DFA892787DF54006F4C30 /* 3D Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "3D Assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
