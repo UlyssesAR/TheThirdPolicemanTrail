@@ -17,8 +17,8 @@
 		50677D002772BD06002302ED /* TheThirdPolicemanTrailUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677CFF2772BD06002302ED /* TheThirdPolicemanTrailUITestsLaunchTests.swift */; };
 		50677D0D2772BE8A002302ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677D0C2772BE8A002302ED /* SceneDelegate.swift */; };
 		506DFA862784DAE7006F4C30 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506DFA852784DAE6006F4C30 /* Launch Screen.storyboard */; };
-		506DFA882784E8F4006F4C30 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 506DFA872784E8F3006F4C30 /* Info.plist */; };
 		506DFA8B2787F3AB006F4C30 /* vanilla_iced_latte.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 506DFA8A2787F3A8006F4C30 /* vanilla_iced_latte.usdz */; };
+		506DFA8F278A1317006F4C30 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506DFA8E278A1317006F4C30 /* ControlView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		50677CFF2772BD06002302ED /* TheThirdPolicemanTrailUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheThirdPolicemanTrailUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		50677D0C2772BE8A002302ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		506DFA852784DAE6006F4C30 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		506DFA872784E8F3006F4C30 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../Downloads/OnTheTrailOfTheThirdPoliceman-main/OnTheTrailOfTheThirdPoliceman/OnTheTrailOfTheThirdPoliceman/Info.plist"; sourceTree = "<group>"; };
 		506DFA8A2787F3A8006F4C30 /* vanilla_iced_latte.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = vanilla_iced_latte.usdz; path = ../../../../Downloads/vanilla_iced_latte.usdz; sourceTree = "<group>"; };
+		506DFA8E278A1317006F4C30 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +107,8 @@
 				506DFA892787DF54006F4C30 /* 3D Assets */,
 				50677CE02772BD02002302ED /* AppDelegate.swift */,
 				50677CE22772BD02002302ED /* ContentView.swift */,
+				506DFA8E278A1317006F4C30 /* ControlView.swift */,
 				50677D0C2772BE8A002302ED /* SceneDelegate.swift */,
-				506DFA872784E8F3006F4C30 /* Info.plist */,
 				50677CE42772BD02002302ED /* Experience.rcproject */,
 				50677CE62772BD05002302ED /* Assets.xcassets */,
 				506DFA852784DAE6006F4C30 /* Launch Screen.storyboard */,
@@ -254,7 +254,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				506DFA882784E8F4006F4C30 /* Info.plist in Resources */,
 				506DFA862784DAE7006F4C30 /* Launch Screen.storyboard in Resources */,
 				50677CEA2772BD05002302ED /* Preview Assets.xcassets in Resources */,
 				506DFA8B2787F3AB006F4C30 /* vanilla_iced_latte.usdz in Resources */,
@@ -287,6 +286,7 @@
 				50677CE12772BD02002302ED /* AppDelegate.swift in Sources */,
 				50677CE52772BD02002302ED /* Experience.rcproject in Sources */,
 				50677D0D2772BE8A002302ED /* SceneDelegate.swift in Sources */,
+				506DFA8F278A1317006F4C30 /* ControlView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +356,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -417,6 +419,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -447,6 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheThirdPolicemanTrail/Preview Content\"";
+				DEVELOPMENT_TEAM = 2DA9QX22AS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -478,6 +483,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheThirdPolicemanTrail/Preview Content\"";
+				DEVELOPMENT_TEAM = 2DA9QX22AS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";

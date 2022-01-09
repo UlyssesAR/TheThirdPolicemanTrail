@@ -14,13 +14,16 @@ struct ContentView: View {
         Home()
     }
 }
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
 
+
 struct ARViewContainer: UIViewRepresentable {
+    
     
     func makeUIView(context: Context) -> ARView {
         
@@ -36,15 +39,30 @@ struct ARViewContainer: UIViewRepresentable {
         
     }
     
-    func updateUIView(_ uiView: ARView, context: Context) {}
+    func updateUIView(_ uiView: ARView, context: Context) {
+       
+    }
     
+}
+
+struct ARViews: View{
+    var body: some View{
+        ZStack(alignment: .bottom){
+            ARViewContainer()
+            ControlView()
+        }
+        .edgesIgnoringSafeArea(.all)
+    }
 }
 
 func openARScene() {
     if let window = UIApplication.shared.windows.first {
-        window.rootViewController = UIHostingController(rootView: ARViewContainer().edgesIgnoringSafeArea(.all))
+        window.rootViewController = UIHostingController(rootView: ARViews().edgesIgnoringSafeArea(.all))
         window.makeKeyAndVisible()
+    
+
     }
+    
 }
 
 struct Home : View {
@@ -241,7 +259,7 @@ struct ExpandView : View {
                 
                 Spacer ()
                 
-                Button(action: openARScene ) {
+                Button(action: {openARScene()} ) {
                     Text("AR Experience")
                         .foregroundColor(.white)
                         .font(.system(size: 22))
