@@ -46,10 +46,11 @@ struct ARViewContainer: UIViewRepresentable {
 }
 
 struct ARViews: View{
+    @State private var showClue: Bool = false
     var body: some View{
         ZStack(alignment: .bottom){
             ARViewContainer()
-            ControlView()
+            ControlView(showClue: $showClue)
         }
         .edgesIgnoringSafeArea(.all)
     }
