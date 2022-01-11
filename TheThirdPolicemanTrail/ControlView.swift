@@ -20,6 +20,27 @@ struct ControlView: View{
     }
 }
 
+struct HomeViews: View{
+    
+    var body: some View{
+        ZStack(alignment: .bottom){
+            ContentView()
+            
+        }
+        .edgesIgnoringSafeArea(.all)
+    }
+}
+
+func openHomeScene() {
+    if let window = UIApplication.shared.windows.first {
+        window.rootViewController = UIHostingController(rootView: HomeViews().edgesIgnoringSafeArea(.all))
+        window.makeKeyAndVisible()
+    
+
+    }
+    
+}
+
 struct ControlButton: View{
     let systemIconName: String
     let action: () -> Void
@@ -49,6 +70,7 @@ struct ControlVisibilityToggleButton: View{
                 
                 ControlButton(systemIconName: "arrowshape.turn.up.left"){
                     print("back button pressed")
+                    
                 }
             }
             
@@ -56,12 +78,14 @@ struct ControlVisibilityToggleButton: View{
     }
 }
 
+
 struct ControlButtonBar: View{
     @Binding var showClue: Bool
     var body: some View {
         HStack{
             ControlButton(systemIconName: "arrowshape.turn.up.left"){
                 print("back button pressed")
+                openHomeScene()
             }
                 
             Spacer()
