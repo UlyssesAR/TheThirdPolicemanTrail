@@ -19,6 +19,8 @@
 		506DFA862784DAE7006F4C30 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506DFA852784DAE6006F4C30 /* Launch Screen.storyboard */; };
 		506DFA8B2787F3AB006F4C30 /* vanilla_iced_latte.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 506DFA8A2787F3A8006F4C30 /* vanilla_iced_latte.usdz */; };
 		506DFA8F278A1317006F4C30 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506DFA8E278A1317006F4C30 /* ControlView.swift */; };
+		506DFA91278D0634006F4C30 /* ClueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506DFA90278D0632006F4C30 /* ClueView.swift */; };
+		506DFA93278DFBA3006F4C30 /* ClueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506DFA92278DFBA1006F4C30 /* ClueModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		506DFA852784DAE6006F4C30 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		506DFA8A2787F3A8006F4C30 /* vanilla_iced_latte.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = vanilla_iced_latte.usdz; path = ../../../../Downloads/vanilla_iced_latte.usdz; sourceTree = "<group>"; };
 		506DFA8E278A1317006F4C30 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		506DFA90278D0632006F4C30 /* ClueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClueView.swift; sourceTree = "<group>"; };
+		506DFA92278DFBA1006F4C30 /* ClueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClueModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				50677CE02772BD02002302ED /* AppDelegate.swift */,
 				50677CE22772BD02002302ED /* ContentView.swift */,
 				506DFA8E278A1317006F4C30 /* ControlView.swift */,
+				506DFA90278D0632006F4C30 /* ClueView.swift */,
+				506DFA92278DFBA1006F4C30 /* ClueModel.swift */,
 				50677D0C2772BE8A002302ED /* SceneDelegate.swift */,
 				50677CE42772BD02002302ED /* Experience.rcproject */,
 				50677CE62772BD05002302ED /* Assets.xcassets */,
@@ -283,8 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				50677CE32772BD02002302ED /* ContentView.swift in Sources */,
+				506DFA91278D0634006F4C30 /* ClueView.swift in Sources */,
 				50677CE12772BD02002302ED /* AppDelegate.swift in Sources */,
 				50677CE52772BD02002302ED /* Experience.rcproject in Sources */,
+				506DFA93278DFBA3006F4C30 /* ClueModel.swift in Sources */,
 				50677D0D2772BE8A002302ED /* SceneDelegate.swift in Sources */,
 				506DFA8F278A1317006F4C30 /* ControlView.swift in Sources */,
 			);

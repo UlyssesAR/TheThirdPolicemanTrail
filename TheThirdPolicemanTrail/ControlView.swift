@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import simd
 
 struct ControlView: View{
     @Binding var showClue: Bool
@@ -94,7 +95,8 @@ struct ControlButtonBar: View{
                 print("info button pressed")
                 self.showClue.toggle()
             }.sheet(isPresented: $showClue, content: {
-                //right clue for each card in list
+                //write clue for each card in list
+                ClueView(showClue: $showClue)
             })
         }
         .frame(maxWidth: 500)
@@ -102,3 +104,4 @@ struct ControlButtonBar: View{
         .background(Color.black.opacity(0.25))
     }
 }
+
