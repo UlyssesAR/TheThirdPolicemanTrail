@@ -10,12 +10,11 @@ import SwiftUI
 struct ClueView: View{
     @Binding var showClue:Bool
     
-    
     var body: some View{
         NavigationView{
             ScrollView(showsIndicators: false){
-                HorizontalGrind(showClue: $showClue, items: )
-            }
+                HorizontalGrind(showClue: $showClue)
+            
             .navigationBarTitle(Text("Clues"), displayMode: .large)
             .navigationBarItems(trailing:
                 Button(action:{
@@ -33,7 +32,7 @@ struct ClueView: View{
 struct HorizontalGrind: View {
     @Binding var showClue:Bool
     //var title: String
-    var items : [Clue]
+    //var items : [Clue]
     private let gridItemLayout = [GridItem(.fixed(300))]
     
     var body: some View{
@@ -46,14 +45,14 @@ struct HorizontalGrind: View {
             
             ScrollView(.horizontal, showsIndicators: false){
                 LazyHGrid(rows: gridItemLayout, spacing: 30) {
-                    ForEach(0..<items.count) {index in
-                        /*Color(UIColor.secondarySystemFill)
+                    ForEach(0..<12) {index in
+                        Color(UIColor.secondarySystemFill)
                             .frame(width: 150, height: 300)
-                            .cornerRadius(8)*/
-                        let clue = items[index]
-                        ClueButton(clue: clue) {
-                            print("clue stuff")
-                            self.showClue = false
+                            .cornerRadius(8)
+                       //let clue = items[index]
+                        //ClueButton(clue: clue) {
+                            //print("clue stuff")
+                            //self.showClue = false
                         }
                         
                     }
@@ -63,7 +62,7 @@ struct HorizontalGrind: View {
             }
         }
     }
-}
+
 
 struct ClueButton: View {
     let clue: Clue
@@ -82,3 +81,4 @@ struct ClueButton: View {
     }
 }
 
+}
