@@ -13,7 +13,7 @@ struct ClueView: View{
     var body: some View{
         NavigationView{
             ScrollView(showsIndicators: false){
-                HorizontalGrind(showClue: $showClue)
+               ObjByLocationGrid()
             
             .navigationBarTitle(Text("Clues"), displayMode: .large)
             .navigationBarItems(trailing:
@@ -28,24 +28,39 @@ struct ClueView: View{
 }
 
 //struct
+    struct ObjByLocationGrid: View {
+        let objects = Objects()
+        
+        var body: some View{
+            VStack{
+                ForEach(ObjLocation.allCases, id: \.self){
+                    location in
+                    if let objByLocation = objects.get(location: location){
+                        HorizontalGrid(title: location.label, items: objByLocation)
+                    }
+                    
+                }
+            }
+        }
+    }
 
-struct HorizontalGrind: View {
-    @Binding var showClue:Bool
-    //var title: String
-    //var items : [Clue]
+struct HorizontalGrid: View {
+    //@Binding var showClue:Bool
+    var title: String
+    var items : [Object]
     private let gridItemLayout = [GridItem(.fixed(300))]
     
     var body: some View{
         VStack(alignment: .leading){
             
-            Text ("Item")
+            Text (title)
                 .font(.title2).bold()
                 .padding(.leading,22)
                 .padding(.top, 10)
             
             ScrollView(.horizontal, showsIndicators: false){
                 LazyHGrid(rows: gridItemLayout, spacing: 30) {
-                    ForEach(0..<12) {index in
+                    ForEach(0..<items.count) {index in
                         Color(UIColor.secondarySystemFill)
                             .frame(width: 150, height: 300)
                             .cornerRadius(8)
@@ -65,7 +80,7 @@ struct HorizontalGrind: View {
 
 
 struct ClueButton: View {
-    let clue: Clue
+    let clue: Object
     let action: () -> Void
     
     var body: some View{
