@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50174A9727B05AFD00AB87D8 /* bikepump.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 50174A9627B05AFD00AB87D8 /* bikepump.usdz */; };
+		50174A9927B05F9B00AB87D8 /* Flann.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 50174A9827B05F9B00AB87D8 /* Flann.rcproject */; };
 		50677CE12772BD02002302ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677CE02772BD02002302ED /* AppDelegate.swift */; };
 		50677CE32772BD02002302ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677CE22772BD02002302ED /* ContentView.swift */; };
 		50677CE52772BD02002302ED /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 50677CE42772BD02002302ED /* Experience.rcproject */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50174A9627B05AFD00AB87D8 /* bikepump.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = bikepump.usdz; path = "../../../../Desktop/3D Assets/bikepump.usdz"; sourceTree = "<group>"; };
+		50174A9827B05F9B00AB87D8 /* Flann.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = Flann.rcproject; path = ../../../Downloads/Flann.rcproject; sourceTree = "<group>"; };
 		50677CDD2772BD02002302ED /* TheThirdPolicemanTrail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheThirdPolicemanTrail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50677CE02772BD02002302ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50677CE22772BD02002302ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50174A9527B05AD100AB87D8 /* 3D Assets */ = {
+			isa = PBXGroup;
+			children = (
+				50174A9627B05AFD00AB87D8 /* bikepump.usdz */,
+			);
+			path = "3D Assets";
+			sourceTree = "<group>";
+		};
 		50677CD42772BD02002302ED = {
 			isa = PBXGroup;
 			children = (
@@ -106,16 +118,17 @@
 		50677CDF2772BD02002302ED /* TheThirdPolicemanTrail */ = {
 			isa = PBXGroup;
 			children = (
-				506DFA892787DF54006F4C30 /* 3D Assets */,
 				50677CE02772BD02002302ED /* AppDelegate.swift */,
 				50677CE22772BD02002302ED /* ContentView.swift */,
 				506DFA8E278A1317006F4C30 /* ControlView.swift */,
 				506DFA90278D0632006F4C30 /* ClueView.swift */,
 				506DFA92278DFBA1006F4C30 /* ClueModel.swift */,
 				50677D0C2772BE8A002302ED /* SceneDelegate.swift */,
+				50174A9827B05F9B00AB87D8 /* Flann.rcproject */,
 				50677CE42772BD02002302ED /* Experience.rcproject */,
 				50677CE62772BD05002302ED /* Assets.xcassets */,
 				506DFA852784DAE6006F4C30 /* Launch Screen.storyboard */,
+				50174A9527B05AD100AB87D8 /* 3D Assets */,
 				50677CE82772BD05002302ED /* Preview Content */,
 			);
 			path = TheThirdPolicemanTrail;
@@ -144,13 +157,6 @@
 				50677CFF2772BD06002302ED /* TheThirdPolicemanTrailUITestsLaunchTests.swift */,
 			);
 			path = TheThirdPolicemanTrailUITests;
-			sourceTree = "<group>";
-		};
-		506DFA892787DF54006F4C30 /* 3D Assets */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "3D Assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +265,7 @@
 			files = (
 				506DFA862784DAE7006F4C30 /* Launch Screen.storyboard in Resources */,
 				50677CEA2772BD05002302ED /* Preview Assets.xcassets in Resources */,
+				50174A9727B05AFD00AB87D8 /* bikepump.usdz in Resources */,
 				50677CE72772BD05002302ED /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50174A9927B05F9B00AB87D8 /* Flann.rcproject in Sources */,
 				50677CE32772BD02002302ED /* ContentView.swift in Sources */,
 				506DFA91278D0634006F4C30 /* ClueView.swift in Sources */,
 				50677CE12772BD02002302ED /* AppDelegate.swift in Sources */,

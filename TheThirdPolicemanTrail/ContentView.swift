@@ -30,7 +30,7 @@ struct ARViewContainer: UIViewRepresentable {
         let arView = ARView(frame: .zero)
         
         // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.loadBox()
+        let boxAnchor = try! Flann.loadGuidanceToPoint1()
         
         // Add the box anchor to the scene
         arView.scene.anchors.append(boxAnchor)
@@ -57,9 +57,11 @@ struct ARViews: View{
 }
 
 func openARScene() {
+    
     if let window = UIApplication.shared.windows.first {
         window.rootViewController = UIHostingController(rootView: ARViews().edgesIgnoringSafeArea(.all))
         window.makeKeyAndVisible()
+        
     
 
     }
@@ -71,12 +73,12 @@ struct Home : View {
         
         SceneData(id: 0, image1: "Burns-1", image2 : "Burns", place1: "Start",place2: "Burns Liabrary Door",title: "Click on this card to start!",clue: "", quotes: "“It was he who first knocked Old Mathers down with a special bicycle-pump which he manufactured himself out of a hollow iron bar”", details: "Welcome! Before you start, here are some instructions. Each point in the maze will have an information card (like this one). The front will have the name of the item along with a reference quote from The Third Policeman. Then, click on the card to see the image, the name, and a description about the location of the point you have to go to. Once you get to the location, press ‘AR Experience’ to find the item with your device and complete tasks to move on to the next point. Now, exit this screen with the ‘x’ button at the top right and swipe to get to the first point on the maze. Good Luck!", anchor: ""),
         
-        SceneData(id: 1, image1: "mazeCover1", image2 : "Maze", place1: "Point A",place2: "Labyrinth", title: "Bicycle Pump", clue:"Find the Bicycle Pump",quotes: "“I knew that old Mathers had been felled by an iron bicycle-pump, hacked to death with a heavy spade and then securely buried in a field.”", details: "On September 11, 2003, a memorial labyrinth was dedicated to the 22 Boston College alumni lost in the 9/11 tragedy. The circle, a perfect form, can be seen as symbolizing eternity, the universe, the repetition of the seasons, the cosmos—the overall perfect plan of the divine. The path through the labyrinth constitutes the longest possible way to arrive at the center. It is important not to hurry the experience, but to submit to its structure and discipline.", anchor: ""),
+        SceneData(id: 1, image1: "mazeCover1", image2 : "Maze", place1: "Point A",place2: "Labyrinth", title: "Bicycle Pump", clue:"Find the Bicycle Pump",quotes: "“I knew that old Mathers had been felled by an iron bicycle-pump, hacked to death with a heavy spade and then securely buried in a field.”", details: "On September 11, 2003, a memorial labyrinth was dedicated to the 22 Boston College alumni lost in the 9/11 tragedy. The circle, a perfect form, can be seen as symbolizing eternity, the universe, the repetition of the seasons, the cosmos—the overall perfect plan of the divine. The path through the labyrinth constitutes the longest possible way to arrive at the center. It is important not to hurry the experience, but to submit to its structure and discipline.", anchor: "bikepump"),
         
         
         SceneData(id: 2, image1: "mazeCover1", image2 : "mainGate", place1: "Point B",place2: "War Memorial",title: "The Wrastler", clue: "Find The Wrastler",quotes: "“It was manufactured in some town in the south and was known as The Wrastler. If you drank three or four pints of it, it was nearly bound to win. ”", details: "This 70-foot-long, two-foot-high serpentine granite wall is etched with the names now of 210 alumni who died in the line of duty in U.S. military conflicts since the start of the First World War.", anchor: ""),
         
-        SceneData(id: 3, image1: "stMarysCover", image2 : "stMary", place1: "Point C",place2: "St. Mary’s",title: "The Pipe", clue: "Find the Pipe", quotes: "“He took out an enormous pipe and when he stuck it in his face it looked like a great hatchet.”", details: "In 1917, St. Mary’s Hall was the second building constructed on Boston College's Chestnut Hill Campus. The north end of the building contains St. Mary's Chapel, a ”Gothic gem” as one Jesuit described it. A southern wing was added to the structure in 1930, providing a covered cloister walk running north and west to enclose a small garden. This building is currently home to offices of the 145 Jesuit priests on Boston College’s campus.", anchor: ""),
+        SceneData(id: 3, image1: "stMarysCover", image2 : "stMary", place1: "Point C",place2: "St. Mary’s",title: "The Pipe", clue: "Find the Pipe", quotes: "“He took out an enormous pipe and when he stuck it in his face it looked like a great hatchet.”", details: "In 1917, St. Mary’s Hall was the second building constructed on Boston College's Chestnut Hill Campus. The north end of the building contains St. Mary's Chapel, a ”Gothic gem” as one Jesuit described it. A southern wing was added to the structure in 1930, providing a covered cloister walk running north and west to enclose a small garden. This building is currently home to offices of the 145 Jesuit priests on Boston College’s campus.", anchor: "pipe"),
         
         SceneData(id: 4, image1: "mazeCover1", image2 : "EaglePillar", place1: "Point D",place2: "Eagle Pillar", title: "Wooden Leg", clue: "Find the Wooden Leg",quotes: "“I smiled at him and pulled up my left trouser-leg to show him my timber shin.”",  details: "The Golden Eagle, originally from Japan, was donated in 1954, when a fan of BC sports donated it to the University, after which it stood in front of Gasson Hall ever since.", anchor: ""),
         

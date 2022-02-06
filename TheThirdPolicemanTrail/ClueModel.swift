@@ -74,6 +74,7 @@ class Object {
         self.scaleCompensation = scaleCompensation
         
     }
+    
     func asyncLoadObjEntity(){
         let filename = self.name + ".usdz"
         self.cancellable=ModelEntity.loadModelAsync(named:filename)

@@ -13,9 +13,9 @@ struct ClueView: View{
     var body: some View{
         NavigationView{
             ScrollView(showsIndicators: false){
-               ObjByLocationGrid()
+                ObjByLocationGrid(showClue: $showClue)
             
-            .navigationBarTitle(Text("Clues"), displayMode: .large)
+            .navigationBarTitle(Text("Objects"), displayMode: .large)
             .navigationBarItems(trailing:
                 Button(action:{
                 self.showClue.toggle()
@@ -29,6 +29,7 @@ struct ClueView: View{
 
 //struct
     struct ObjByLocationGrid: View {
+        @Binding var showClue:Bool
         let objects = Objects()
         
         var body: some View{
@@ -36,7 +37,7 @@ struct ClueView: View{
                 ForEach(ObjLocation.allCases, id: \.self){
                     location in
                     if let objByLocation = objects.get(location: location){
-                        HorizontalGrid(title: location.label, items: objByLocation)
+                        HorizontalGrid(showClue: $showClue, title: location.label, items: objByLocation)
                     }
                     
                 }
@@ -45,7 +46,7 @@ struct ClueView: View{
     }
 
 struct HorizontalGrid: View {
-    //@Binding var showClue:Bool
+    @Binding var showClue:Bool
     var title: String
     var items : [Object]
     private let gridItemLayout = [GridItem(.fixed(300))]
@@ -61,9 +62,16 @@ struct HorizontalGrid: View {
             ScrollView(.horizontal, showsIndicators: false){
                 LazyHGrid(rows: gridItemLayout, spacing: 30) {
                     ForEach(0..<items.count) {index in
-                        Color(UIColor.secondarySystemFill)
-                            .frame(width: 150, height: 300)
-                            .cornerRadius(8)
+                        let object = items[index]
+                        
+                        ObjButton(object:object) {
+                            object.asyncLoadObjEntity()
+                            self.showClue = false
+                            print("BrowseView: selected \(object.name) for placement.")
+                        }
+                        //Color(UIColor.secondarySystemFill)
+                          //  .frame(width: 150, height: 300)
+                            //.cornerRadius(8)
                        //let clue = items[index]
                         //ClueButton(clue: clue) {
                             //print("clue stuff")
@@ -79,17 +87,18 @@ struct HorizontalGrid: View {
     }
 
 
-struct ClueButton: View {
-    let clue: Object
+struct ObjButton: View {
+    let object: Object
     let action: () -> Void
     
     var body: some View{
         Button(action: {
             self.action()
         }){
-            Image(uiImage: self.clue.thumbnail)
+            Image(uiImage: self.object.thumbnail)
                 .resizable()
                 .frame(height: 300)
+                .aspectRatio(1/1, contentMode: .fit)
                 .background(Color(UIColor.secondarySystemFill))
                 .cornerRadius(0.8)
         }
