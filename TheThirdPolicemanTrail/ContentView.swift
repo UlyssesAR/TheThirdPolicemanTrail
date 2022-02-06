@@ -8,6 +8,8 @@
 import SwiftUI
 import RealityKit
 
+var sceneNum = 0;
+
 struct ContentView: View {
     var body: some View {
         
@@ -24,17 +26,25 @@ struct ContentView_Previews: PreviewProvider {
 
 struct ARViewContainer: UIViewRepresentable {
     
-    
     func makeUIView(context: Context) -> ARView {
         
         let arView = ARView(frame: .zero)
         
         // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Flann.loadGuidanceToPoint1()
-        
-        // Add the box anchor to the scene
-        arView.scene.anchors.append(boxAnchor)
-        
+        switch sceneNum{
+        case 0:
+            let anchor = try! Flann.loadGuidanceToPoint1()
+            arView.scene.anchors.append(anchor)
+        case 1:
+            let anchor = try! Flann.load_1BicyclePump()
+            arView.scene.anchors.append(anchor)
+        case 2:
+            let anchor = try! Flann.loadScene()
+            arView.scene.anchors.append(anchor)
+        default:
+            let anchor = try! Experience.loadBox()
+            arView.scene.anchors.append(anchor)
+        }
         return arView
         
     }
@@ -262,7 +272,9 @@ struct ExpandView : View {
                 
                 Spacer ()
                 
-                Button(action: {openARScene()} ) {
+                Button(action: {
+                    sceneNum = self.data.id
+                    openARScene()} ) {
                     Text("AR Experience")
                         .foregroundColor(.white)
                         .font(.system(size: 22))
@@ -345,7 +357,11 @@ struct SceneData : Identifiable {
     var clue : String
     var quotes : String
     var details : String
-    var anchor : String
+    var anchor : Any
+    
+    func defaul () {
+        sceneNum = id
+    }
 }
 
 struct CShape : Shape {
