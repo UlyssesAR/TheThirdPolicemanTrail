@@ -91,13 +91,13 @@ struct ControlButtonBar: View{
                 
             Spacer()
                 
-            ControlButton(systemIconName:"book.circle"){
+            /*ControlButton(systemIconName:"book.circle"){
                 print("info button pressed")
                 self.showClue.toggle()
             }.sheet(isPresented: $showClue, content: {
                 //write clue for each card in list
                 ClueView(showClue: $showClue)
-            })
+            })*/
         }
         .frame(maxWidth: 500)
         .padding(30)

@@ -30,10 +30,10 @@ struct ARViewContainer: UIViewRepresentable {
         
         let arView = ARView(frame: .zero)
         
-        // Load the "Box" scene from the "Experience" Reality File
+        
         switch sceneNum{
         case 0:
-            let anchor = try! Flann.loadGuidanceToPoint1()
+            let anchor = try! LegBallGame.loadScene()
             arView.scene.anchors.append(anchor)
         case 1:
             let anchor = try! Flann.load_1BicyclePump()
@@ -41,6 +41,8 @@ struct ARViewContainer: UIViewRepresentable {
         case 2:
             let anchor = try! Flann.loadScene()
             arView.scene.anchors.append(anchor)
+        case 3:
+            let anchor = try! TeethFinal.loadScene()
         default:
             let anchor = try! Experience.loadBox()
             arView.scene.anchors.append(anchor)
@@ -102,9 +104,9 @@ struct Home : View {
         
         SceneData(id: 9, image1: "mazeCover1", image2 : "Maze", place1: "Point J", place2: "Schiller Institute",title: "The Bucket",clue: "Find the Bucket", quotes: "“Well if you had that box here,’ he said, ‘you could have a bucket of strawberry jam for your tea and if that was not enough you could have a bathful of it to lie in it full-length and if that much did not satisfy you, you could have ten acres of land with strawberry jam spread on it to the height of your two oxters. What do you think of that?”", details: "The Schiller Institute for Integrated Science and Society is the centerpiece of a new 150,000 square-foot science facility. Construction began in the spring of 2019 at a cost of roughly $150 million. Through the Institute, Boston College will explore new interdisciplinary courses in integrated sciences and human-centered engineering, design thinking, implementation science, data analytics, global public health and other fields that will combine elements of science, engineering, humanities, law and entrepreneurship through collaboration with MCAS, BC’s professional schools, and its Shea Center for Entrepreneurship.", anchor: ""),
         
-        SceneData(id: 10, image1: "mazeCover1", image2 : "Maze", place1: "Point K", place2: "St. Ignacious Statue",title: "The Noose", clue: "Find the Noose", quotes: "“Then how can I be hanged for a murder, even if I did commit it and there is no trial or preliminary proceedings, no caution administered and no hearing before a Commissioner of the Public Peace?”", details: "Installed in 2006, this 10-foot bronze sculpture portrays St. Ignatius of Loyola (1491–1556), founder of the Jesuit order, as a teacher. Created by Pablo Eduardo, a Bolivian-born artist who lives in Gloucester, Massachusetts, the statue, set atop a five-foot granite pedestal on the Higgins green.", anchor: ""),
+        SceneData(id: 10, image1: "mazeCover1", image2 : "Maze", place1: "Point K", place2: "Devlin Hall",title: "The Noose", clue: "Find the Noose", quotes: "“Then how can I be hanged for a murder, even if I did commit it and there is no trial or preliminary proceedings, no caution administered and no hearing before a Commissioner of the Public Peace?”", details: "Installed in 2006, this 10-foot bronze sculpture portrays St. Ignatius of Loyola (1491–1556), founder of the Jesuit order, as a teacher. Created by Pablo Eduardo, a Bolivian-born artist who lives in Gloucester, Massachusetts, the statue, set atop a five-foot granite pedestal on the Higgins green.", anchor: ""),
         
-        SceneData(id: 11, image1: "mazeCover1", image2 : "Maze", place1: "Point L", place2: "Devlin Hall",title: "Cash-Box Bomb", clue: "Find the Cash-Box Bomb", quotes: "“In the weeks which followed I asked him where the box was a hundred times in a thousand different ways. He never answered in the same way but the answer was always the same. It was in a very safe place.”", details: "Devlin Hall, the third building built on Boston College’s campus in 1924, is the fourth building of the academic quadrilateral and is home to the Undergraduate Office of Admission. ", anchor: ""),
+        SceneData(id: 11, image1: "mazeCover1", image2 : "Maze", place1: "Point L", place2: "St. Ignacious Statue",title: "Cash-Box Bomb", clue: "Find the Cash-Box Bomb", quotes: "“In the weeks which followed I asked him where the box was a hundred times in a thousand different ways. He never answered in the same way but the answer was always the same. It was in a very safe place.”", details: "Devlin Hall, the third building built on Boston College’s campus in 1924, is the fourth building of the academic quadrilateral and is home to the Undergraduate Office of Admission. ", anchor: ""),
         
         SceneData(id: 12, image1: "mazeCover1", image2 : "Maze", place1: "Point M", place2: "The Irish Room at Burns",title: "The Finale", clue: "", quotes: "", details: "The Irish Room highlights a few of our Irish literature and music collections, including books by Samuel Beckett and William Butler Yeats. The paintings in the room are of other notable Irish literary figures. Across the hallway, the O’Brien Fine Print Room features examples of early printed books as well as contemporary volumes from fine presses. The exhibit cases lining the hallway display different themes in Burns and change multiple times a year.", anchor: "")
 
