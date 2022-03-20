@@ -33,16 +33,18 @@ struct ARViewContainer: UIViewRepresentable {
         
         switch sceneNum{
         case 0:
-            let anchor = try! LegBallGame.loadScene()
+            let anchor = try! BottleScene.loadScene()
             arView.scene.anchors.append(anchor)
         case 1:
-            let anchor = try! Flann.load_1BicyclePump()
+            let anchor = try! SleepMoleculeDraft.loadScene()
             arView.scene.anchors.append(anchor)
         case 2:
-            let anchor = try! Flann.loadScene()
+            let anchor = try! SceneBicycleH.loadScene()
             arView.scene.anchors.append(anchor)
         case 3:
             let anchor = try! TeethFinal.loadScene()
+            arView.scene.anchors.append(anchor)
+    
         default:
             let anchor = try! Experience.loadBox()
             arView.scene.anchors.append(anchor)
