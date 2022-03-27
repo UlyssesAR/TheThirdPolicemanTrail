@@ -33,16 +33,46 @@ struct ARViewContainer: UIViewRepresentable {
         
         switch sceneNum{
         case 0:
-            let anchor = try! BottleScene.loadScene()
+            let anchor = try! Experience.loadBox()
             arView.scene.anchors.append(anchor)
         case 1:
-            let anchor = try! SleepMoleculeDraft.loadScene()
+            let anchor = try! Experience.loadBox()
             arView.scene.anchors.append(anchor)
         case 2:
-            let anchor = try! SceneBicycleH.loadScene()
+            let anchor = try! BottleScene2.loadScene()
             arView.scene.anchors.append(anchor)
         case 3:
+            let anchor = try! Pipe.loadScene()
+            arView.scene.anchors.append(anchor)
+        case 4:
+            let anchor = try! LegGame.loadTutorial()
+            arView.scene.anchors.append(anchor)
+        case 5:
+            let anchor = try! SleepMoleculeDraft.loadScene()
+            arView.scene.anchors.append(anchor)
+        case 6:
+            let anchor = try! BookThings.loadScene()
+            arView.scene.anchors.append(anchor)
+        case 7:
             let anchor = try! TeethFinal.loadScene()
+            arView.scene.anchors.append(anchor)
+        case 8:
+            let anchor = try! TapThing.loadScene()
+            arView.scene.anchors.append(anchor)
+        case 9:
+            let anchor = try! Experience.loadBox()
+            arView.scene.anchors.append(anchor)
+        case 10:
+            let anchor = try! Bicycle.loadSceneJ()
+            arView.scene.anchors.append(anchor)
+        case 11:
+            let anchor = try! Experience.loadBox()
+            arView.scene.anchors.append(anchor)
+        case 12:
+            let anchor = try!TimeScene.loadScene1()
+            arView.scene.anchors.append(anchor)
+        case 13:
+            let anchor = try! Experience.loadBox()
             arView.scene.anchors.append(anchor)
     
         default:
