@@ -69,11 +69,8 @@ struct ARViewContainer: UIViewRepresentable {
             let anchor = try! Experience.loadBox()
             arView.scene.anchors.append(anchor)
         case 12:
-            let anchor = try!TimeScene.loadScene1()
-            arView.scene.anchors.append(anchor)
-        case 13:
-            let anchor = try! Experience.loadBox()
-            arView.scene.anchors.append(anchor)
+            let anchor = try!Experience.loadBox()            arView.scene.anchors.append(anchor)
+    
     
         default:
             let anchor = try! Experience.loadBox()
