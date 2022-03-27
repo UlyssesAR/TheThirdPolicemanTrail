@@ -67,7 +67,7 @@
 		50AD025827F0F4B000125CE5 /* TapThing.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = TapThing.rcproject; sourceTree = "<group>"; };
 		50AD025C27F0F7A700125CE5 /* TeethFinal.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = TeethFinal.rcproject; sourceTree = "<group>"; };
 		50AD025E27F0F85A00125CE5 /* Sleep molecule draft.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = "Sleep molecule draft.rcproject"; sourceTree = "<group>"; };
-		50AD026227F0FA2E00125CE5 /* Bicycle.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = Bicycle.rcproject; path = ../../../Downloads/scenes/Bicycle.rcproject; sourceTree = "<group>"; };
+		50AD026227F0FA2E00125CE5 /* Bicycle.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Bicycle.rcproject; sourceTree = "<group>"; };
 		50AD026427F0FCC900125CE5 /* Leg Game.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = "Leg Game.rcproject"; path = "../../../Downloads/scenes/Leg Game.rcproject"; sourceTree = "<group>"; };
 		50AD026627F0FDDA00125CE5 /* Pipe.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = Pipe.rcproject; path = ../../../Downloads/scenes/Pipe.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
