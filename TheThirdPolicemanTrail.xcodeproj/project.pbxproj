@@ -63,7 +63,7 @@
 		5082A2D327E79DB100562106 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Downloads/TheThirdPolicemanTrail-master/TheThirdPolicemanTrail/Assets.xcassets"; sourceTree = "<group>"; };
 		50AD025227F0E76A00125CE5 /* Time scene.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = "Time scene.rcproject"; sourceTree = "<group>"; };
 		50AD025427F0E7C900125CE5 /* Bottle Scene 2.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = "Bottle Scene 2.rcproject"; path = "../../../Downloads/scenes/Bottle Scene 2.rcproject"; sourceTree = "<group>"; };
-		50AD025627F0F4A900125CE5 /* BookThings.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = BookThings.rcproject; path = ../../../Downloads/scenes/Archive/BookThings.rcproject; sourceTree = "<group>"; };
+		50AD025627F0F4A900125CE5 /* BookThings.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = BookThings.rcproject; sourceTree = "<group>"; };
 		50AD025827F0F4B000125CE5 /* TapThing.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = TapThing.rcproject; path = ../../../Downloads/scenes/Archive/TapThing.rcproject; sourceTree = "<group>"; };
 		50AD025C27F0F7A700125CE5 /* TeethFinal.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = TeethFinal.rcproject; sourceTree = "<group>"; };
 		50AD025E27F0F85A00125CE5 /* Sleep molecule draft.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = "Sleep molecule draft.rcproject"; path = "../../../Downloads/scenes/Sleep molecule draft.rcproject"; sourceTree = "<group>"; };
