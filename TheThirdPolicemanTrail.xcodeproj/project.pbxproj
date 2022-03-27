@@ -61,7 +61,7 @@
 		506DFA852784DAE6006F4C30 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		506DFA8E278A1317006F4C30 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		5082A2D327E79DB100562106 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Downloads/TheThirdPolicemanTrail-master/TheThirdPolicemanTrail/Assets.xcassets"; sourceTree = "<group>"; };
-		50AD025227F0E76A00125CE5 /* Time scene.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = "Time scene.rcproject"; path = "../../../Downloads/scenes/Time scene.rcproject"; sourceTree = "<group>"; };
+		50AD025227F0E76A00125CE5 /* Time scene.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = "Time scene.rcproject"; sourceTree = "<group>"; };
 		50AD025427F0E7C900125CE5 /* Bottle Scene 2.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = "Bottle Scene 2.rcproject"; path = "../../../Downloads/scenes/Bottle Scene 2.rcproject"; sourceTree = "<group>"; };
 		50AD025627F0F4A900125CE5 /* BookThings.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = BookThings.rcproject; path = ../../../Downloads/scenes/Archive/BookThings.rcproject; sourceTree = "<group>"; };
 		50AD025827F0F4B000125CE5 /* TapThing.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = TapThing.rcproject; path = ../../../Downloads/scenes/Archive/TapThing.rcproject; sourceTree = "<group>"; };
