@@ -26,7 +26,7 @@
 		50AD025F27F0F85A00125CE5 /* Sleep molecule draft.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 50AD025E27F0F85A00125CE5 /* Sleep molecule draft.rcproject */; };
 		50AD026327F0FA2E00125CE5 /* Bicycle.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 50AD026227F0FA2E00125CE5 /* Bicycle.rcproject */; };
 		50AD026527F0FCC900125CE5 /* Leg Game.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 50AD026427F0FCC900125CE5 /* Leg Game.rcproject */; };
-		50AD026727F0FDDA00125CE5 /* Pipe.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 50AD026627F0FDDA00125CE5 /* Pipe.rcproject */; };
+		50AD026727F0FDDA00125CE5 /* Pipe Scene.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 50AD026627F0FDDA00125CE5 /* Pipe Scene.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +69,7 @@
 		50AD025E27F0F85A00125CE5 /* Sleep molecule draft.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = "Sleep molecule draft.rcproject"; sourceTree = "<group>"; };
 		50AD026227F0FA2E00125CE5 /* Bicycle.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Bicycle.rcproject; sourceTree = "<group>"; };
 		50AD026427F0FCC900125CE5 /* Leg Game.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = "Leg Game.rcproject"; sourceTree = "<group>"; };
-		50AD026627F0FDDA00125CE5 /* Pipe.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = Pipe.rcproject; path = ../../../Downloads/scenes/Pipe.rcproject; sourceTree = "<group>"; };
+		50AD026627F0FDDA00125CE5 /* Pipe Scene.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = "Pipe Scene.rcproject"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +130,7 @@
 				50AD026427F0FCC900125CE5 /* Leg Game.rcproject */,
 				50AD025427F0E7C900125CE5 /* Bottle Scene 2.rcproject */,
 				50AD026227F0FA2E00125CE5 /* Bicycle.rcproject */,
-				50AD026627F0FDDA00125CE5 /* Pipe.rcproject */,
+				50AD026627F0FDDA00125CE5 /* Pipe Scene.rcproject */,
 				50AD025627F0F4A900125CE5 /* BookThings.rcproject */,
 				50AD025E27F0F85A00125CE5 /* Sleep molecule draft.rcproject */,
 				50AD025827F0F4B000125CE5 /* TapThing.rcproject */,
@@ -301,7 +301,7 @@
 				50677CE32772BD02002302ED /* ContentView.swift in Sources */,
 				50677CE12772BD02002302ED /* AppDelegate.swift in Sources */,
 				50677CE52772BD02002302ED /* Experience.rcproject in Sources */,
-				50AD026727F0FDDA00125CE5 /* Pipe.rcproject in Sources */,
+				50AD026727F0FDDA00125CE5 /* Pipe Scene.rcproject in Sources */,
 				50AD025F27F0F85A00125CE5 /* Sleep molecule draft.rcproject in Sources */,
 				50AD025527F0E7C900125CE5 /* Bottle Scene 2.rcproject in Sources */,
 				50AD026327F0FA2E00125CE5 /* Bicycle.rcproject in Sources */,
