@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		50677CE12772BD02002302ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677CE02772BD02002302ED /* AppDelegate.swift */; };
 		50677CE32772BD02002302ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677CE22772BD02002302ED /* ContentView.swift */; };
-		50677CE52772BD02002302ED /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 50677CE42772BD02002302ED /* Experience.rcproject */; };
 		50677CEA2772BD05002302ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50677CE92772BD05002302ED /* Preview Assets.xcassets */; };
 		50677CF42772BD06002302ED /* TheThirdPolicemanTrailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677CF32772BD06002302ED /* TheThirdPolicemanTrailTests.swift */; };
 		50677CFE2772BD06002302ED /* TheThirdPolicemanTrailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50677CFD2772BD06002302ED /* TheThirdPolicemanTrailUITests.swift */; };
@@ -18,15 +17,18 @@
 		506DFA862784DAE7006F4C30 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506DFA852784DAE6006F4C30 /* Launch Screen.storyboard */; };
 		506DFA8F278A1317006F4C30 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506DFA8E278A1317006F4C30 /* ControlView.swift */; };
 		5082A2D427E79DB100562106 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5082A2D327E79DB100562106 /* Assets.xcassets */; };
-		50AD025327F0E76A00125CE5 /* Time scene.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 50AD025227F0E76A00125CE5 /* Time scene.rcproject */; };
-		50AD025527F0E7C900125CE5 /* Bottle Scene.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 50AD025427F0E7C900125CE5 /* Bottle Scene.rcproject */; };
-		50AD025727F0F4A900125CE5 /* BookThings.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 50AD025627F0F4A900125CE5 /* BookThings.rcproject */; };
-		50AD025927F0F4B000125CE5 /* TapThing.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 50AD025827F0F4B000125CE5 /* TapThing.rcproject */; };
-		50AD025D27F0F7A800125CE5 /* TeethFinal.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 50AD025C27F0F7A700125CE5 /* TeethFinal.rcproject */; };
-		50AD025F27F0F85A00125CE5 /* Sleep molecule draft.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 50AD025E27F0F85A00125CE5 /* Sleep molecule draft.rcproject */; };
-		50AD026327F0FA2E00125CE5 /* Bicycle.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 50AD026227F0FA2E00125CE5 /* Bicycle.rcproject */; };
-		50AD026527F0FCC900125CE5 /* Leg Game.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 50AD026427F0FCC900125CE5 /* Leg Game.rcproject */; };
-		50AD026727F0FDDA00125CE5 /* Pipe Scene.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 50AD026627F0FDDA00125CE5 /* Pipe Scene.rcproject */; };
+		A05EBC0F27FD128400EE9E27 /* SCENE_K_IGNATIUS.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A05EBC0427FD126900EE9E27 /* SCENE_K_IGNATIUS.rcproject */; };
+		A05EBC1027FD128400EE9E27 /* SCENE_D_LEG.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A05EBC0527FD126C00EE9E27 /* SCENE_D_LEG.rcproject */; };
+		A05EBC1127FD128400EE9E27 /* SCENE_G_TEETH.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A05EBC0627FD126F00EE9E27 /* SCENE_G_TEETH.rcproject */; };
+		A05EBC1227FD128400EE9E27 /* SCENE_H_TAP.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A05EBC0727FD127100EE9E27 /* SCENE_H_TAP.rcproject */; };
+		A05EBC1327FD128400EE9E27 /* SCENE_C_PIPE.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A05EBC0827FD127300EE9E27 /* SCENE_C_PIPE.rcproject */; };
+		A05EBC1427FD128400EE9E27 /* SCENE_A_MAZE.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A05EBC0927FD127600EE9E27 /* SCENE_A_MAZE.rcproject */; };
+		A05EBC1527FD128400EE9E27 /* SCENE_L_CASH.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A05EBC0A27FD127800EE9E27 /* SCENE_L_CASH.rcproject */; };
+		A05EBC1627FD128400EE9E27 /* SCENE_J_BICYCLE.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A05EBC0B27FD127A00EE9E27 /* SCENE_J_BICYCLE.rcproject */; };
+		A05EBC1727FD128400EE9E27 /* SCENE_F_BOOK.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A05EBC0C27FD127C00EE9E27 /* SCENE_F_BOOK.rcproject */; };
+		A05EBC1827FD128400EE9E27 /* SCENE_B_BOTTLES.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A05EBC0D27FD128200EE9E27 /* SCENE_B_BOTTLES.rcproject */; };
+		A05EBC1927FD128400EE9E27 /* SCENE_E_SHEEP.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A05EBC0E27FD128400EE9E27 /* SCENE_E_SHEEP.rcproject */; };
+		A05EBC1B27FD129900EE9E27 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A05EBC1A27FD129900EE9E27 /* Experience.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +52,6 @@
 		50677CDD2772BD02002302ED /* TheThirdPolicemanTrail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheThirdPolicemanTrail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50677CE02772BD02002302ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50677CE22772BD02002302ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		50677CE42772BD02002302ED /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		50677CE92772BD05002302ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		50677CEF2772BD06002302ED /* TheThirdPolicemanTrailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheThirdPolicemanTrailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50677CF32772BD06002302ED /* TheThirdPolicemanTrailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheThirdPolicemanTrailTests.swift; sourceTree = "<group>"; };
@@ -61,15 +62,18 @@
 		506DFA852784DAE6006F4C30 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		506DFA8E278A1317006F4C30 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		5082A2D327E79DB100562106 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Downloads/TheThirdPolicemanTrail-master/TheThirdPolicemanTrail/Assets.xcassets"; sourceTree = "<group>"; };
-		50AD025227F0E76A00125CE5 /* Time scene.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = "Time scene.rcproject"; sourceTree = "<group>"; };
-		50AD025427F0E7C900125CE5 /* Bottle Scene.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = "Bottle Scene.rcproject"; sourceTree = "<group>"; };
-		50AD025627F0F4A900125CE5 /* BookThings.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = BookThings.rcproject; sourceTree = "<group>"; };
-		50AD025827F0F4B000125CE5 /* TapThing.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = TapThing.rcproject; sourceTree = "<group>"; };
-		50AD025C27F0F7A700125CE5 /* TeethFinal.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = TeethFinal.rcproject; sourceTree = "<group>"; };
-		50AD025E27F0F85A00125CE5 /* Sleep molecule draft.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = "Sleep molecule draft.rcproject"; sourceTree = "<group>"; };
-		50AD026227F0FA2E00125CE5 /* Bicycle.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Bicycle.rcproject; sourceTree = "<group>"; };
-		50AD026427F0FCC900125CE5 /* Leg Game.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = "Leg Game.rcproject"; sourceTree = "<group>"; };
-		50AD026627F0FDDA00125CE5 /* Pipe Scene.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = "Pipe Scene.rcproject"; sourceTree = "<group>"; };
+		A05EBC0427FD126900EE9E27 /* SCENE_K_IGNATIUS.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = SCENE_K_IGNATIUS.rcproject; sourceTree = "<group>"; };
+		A05EBC0527FD126C00EE9E27 /* SCENE_D_LEG.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = SCENE_D_LEG.rcproject; sourceTree = "<group>"; };
+		A05EBC0627FD126F00EE9E27 /* SCENE_G_TEETH.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = SCENE_G_TEETH.rcproject; sourceTree = "<group>"; };
+		A05EBC0727FD127100EE9E27 /* SCENE_H_TAP.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = SCENE_H_TAP.rcproject; sourceTree = "<group>"; };
+		A05EBC0827FD127300EE9E27 /* SCENE_C_PIPE.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = SCENE_C_PIPE.rcproject; sourceTree = "<group>"; };
+		A05EBC0927FD127600EE9E27 /* SCENE_A_MAZE.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = SCENE_A_MAZE.rcproject; sourceTree = "<group>"; };
+		A05EBC0A27FD127800EE9E27 /* SCENE_L_CASH.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = SCENE_L_CASH.rcproject; sourceTree = "<group>"; };
+		A05EBC0B27FD127A00EE9E27 /* SCENE_J_BICYCLE.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = SCENE_J_BICYCLE.rcproject; sourceTree = "<group>"; };
+		A05EBC0C27FD127C00EE9E27 /* SCENE_F_BOOK.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = SCENE_F_BOOK.rcproject; sourceTree = "<group>"; };
+		A05EBC0D27FD128200EE9E27 /* SCENE_B_BOTTLES.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = SCENE_B_BOTTLES.rcproject; sourceTree = "<group>"; };
+		A05EBC0E27FD128400EE9E27 /* SCENE_E_SHEEP.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = SCENE_E_SHEEP.rcproject; sourceTree = "<group>"; };
+		A05EBC1A27FD129900EE9E27 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,17 +128,19 @@
 				50677CE22772BD02002302ED /* ContentView.swift */,
 				506DFA8E278A1317006F4C30 /* ControlView.swift */,
 				50677D0C2772BE8A002302ED /* SceneDelegate.swift */,
-				50677CE42772BD02002302ED /* Experience.rcproject */,
-				50AD025227F0E76A00125CE5 /* Time scene.rcproject */,
-				50AD025C27F0F7A700125CE5 /* TeethFinal.rcproject */,
-				50AD026427F0FCC900125CE5 /* Leg Game.rcproject */,
-				50AD025427F0E7C900125CE5 /* Bottle Scene.rcproject */,
-				50AD026227F0FA2E00125CE5 /* Bicycle.rcproject */,
-				50AD026627F0FDDA00125CE5 /* Pipe Scene.rcproject */,
-				50AD025627F0F4A900125CE5 /* BookThings.rcproject */,
-				50AD025E27F0F85A00125CE5 /* Sleep molecule draft.rcproject */,
-				50AD025827F0F4B000125CE5 /* TapThing.rcproject */,
 				506DFA852784DAE6006F4C30 /* Launch Screen.storyboard */,
+				A05EBC0927FD127600EE9E27 /* SCENE_A_MAZE.rcproject */,
+				A05EBC0D27FD128200EE9E27 /* SCENE_B_BOTTLES.rcproject */,
+				A05EBC0827FD127300EE9E27 /* SCENE_C_PIPE.rcproject */,
+				A05EBC0527FD126C00EE9E27 /* SCENE_D_LEG.rcproject */,
+				A05EBC0E27FD128400EE9E27 /* SCENE_E_SHEEP.rcproject */,
+				A05EBC0C27FD127C00EE9E27 /* SCENE_F_BOOK.rcproject */,
+				A05EBC1A27FD129900EE9E27 /* Experience.rcproject */,
+				A05EBC0627FD126F00EE9E27 /* SCENE_G_TEETH.rcproject */,
+				A05EBC0727FD127100EE9E27 /* SCENE_H_TAP.rcproject */,
+				A05EBC0B27FD127A00EE9E27 /* SCENE_J_BICYCLE.rcproject */,
+				A05EBC0427FD126900EE9E27 /* SCENE_K_IGNATIUS.rcproject */,
+				A05EBC0A27FD127800EE9E27 /* SCENE_L_CASH.rcproject */,
 				5082A2D327E79DB100562106 /* Assets.xcassets */,
 				50677CE82772BD05002302ED /* Preview Content */,
 			);
@@ -297,20 +303,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50AD025927F0F4B000125CE5 /* TapThing.rcproject in Sources */,
+				A05EBC1327FD128400EE9E27 /* SCENE_C_PIPE.rcproject in Sources */,
+				A05EBC1227FD128400EE9E27 /* SCENE_H_TAP.rcproject in Sources */,
+				A05EBC1527FD128400EE9E27 /* SCENE_L_CASH.rcproject in Sources */,
 				50677CE32772BD02002302ED /* ContentView.swift in Sources */,
+				A05EBC1627FD128400EE9E27 /* SCENE_J_BICYCLE.rcproject in Sources */,
+				A05EBC1127FD128400EE9E27 /* SCENE_G_TEETH.rcproject in Sources */,
+				A05EBC1B27FD129900EE9E27 /* Experience.rcproject in Sources */,
+				A05EBC1927FD128400EE9E27 /* SCENE_E_SHEEP.rcproject in Sources */,
 				50677CE12772BD02002302ED /* AppDelegate.swift in Sources */,
-				50677CE52772BD02002302ED /* Experience.rcproject in Sources */,
-				50AD026727F0FDDA00125CE5 /* Pipe Scene.rcproject in Sources */,
-				50AD025F27F0F85A00125CE5 /* Sleep molecule draft.rcproject in Sources */,
-				50AD025527F0E7C900125CE5 /* Bottle Scene.rcproject in Sources */,
-				50AD026327F0FA2E00125CE5 /* Bicycle.rcproject in Sources */,
-				50AD025327F0E76A00125CE5 /* Time scene.rcproject in Sources */,
 				50677D0D2772BE8A002302ED /* SceneDelegate.swift in Sources */,
-				50AD025727F0F4A900125CE5 /* BookThings.rcproject in Sources */,
+				A05EBC1827FD128400EE9E27 /* SCENE_B_BOTTLES.rcproject in Sources */,
+				A05EBC1427FD128400EE9E27 /* SCENE_A_MAZE.rcproject in Sources */,
+				A05EBC1027FD128400EE9E27 /* SCENE_D_LEG.rcproject in Sources */,
 				506DFA8F278A1317006F4C30 /* ControlView.swift in Sources */,
-				50AD026527F0FCC900125CE5 /* Leg Game.rcproject in Sources */,
-				50AD025D27F0F7A800125CE5 /* TeethFinal.rcproject in Sources */,
+				A05EBC1727FD128400EE9E27 /* SCENE_F_BOOK.rcproject in Sources */,
+				A05EBC0F27FD128400EE9E27 /* SCENE_K_IGNATIUS.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,12 +478,12 @@
 		50677D042772BD06002302ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheThirdPolicemanTrail/Preview Content\"";
-				DEVELOPMENT_TEAM = 2DA9QX22AS;
+				DEVELOPMENT_TEAM = M6Y6U4AR9Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -491,7 +499,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = TheThirdPolicemanTrail;
+				PRODUCT_BUNDLE_IDENTIFIER = TheThirdPolicemanTrailAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -502,12 +510,12 @@
 		50677D052772BD06002302ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheThirdPolicemanTrail/Preview Content\"";
-				DEVELOPMENT_TEAM = 2DA9QX22AS;
+				DEVELOPMENT_TEAM = M6Y6U4AR9Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -523,7 +531,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = TheThirdPolicemanTrail;
+				PRODUCT_BUNDLE_IDENTIFIER = TheThirdPolicemanTrailAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

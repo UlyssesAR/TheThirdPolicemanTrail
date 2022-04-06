@@ -36,41 +36,41 @@ struct ARViewContainer: UIViewRepresentable {
             let anchor = try! Experience.loadBox()
             arView.scene.anchors.append(anchor)
         case 1:
-            let anchor = try! Experience.loadBox()
+            let anchor = try! SCENEAMAZE.loadSceneA()
             arView.scene.anchors.append(anchor)
         case 2:
-            let anchor = try! BottleScene2.loadScene()
+            let anchor = try! SCENEBBOTTLES.loadSceneB()
             arView.scene.anchors.append(anchor)
         case 3:
-            let anchor = try! Pipe.loadScene()
+            let anchor = try! SCENECPIPE.loadSceneC()
             arView.scene.anchors.append(anchor)
         case 4:
-            let anchor = try! LegGame.loadTutorial()
+            let anchor = try! SCENEDLEG.loadSceneD()
             arView.scene.anchors.append(anchor)
         case 5:
-            let anchor = try! SleepMoleculeDraft.loadScene()
+            let anchor = try! SCENEESHEEP.loadSceneE()
             arView.scene.anchors.append(anchor)
         case 6:
-            let anchor = try! BookThings.loadScene()
+            let anchor = try! SCENEFBOOK.loadSceneF()
             arView.scene.anchors.append(anchor)
         case 7:
-            let anchor = try! TeethFinal.loadScene()
+            let anchor = try! SCENEGTEETH.loadSceneG()
             arView.scene.anchors.append(anchor)
         case 8:
-            let anchor = try! TapThing.loadScene()
+            let anchor = try! SCENEHTAP.loadSceneH()
             arView.scene.anchors.append(anchor)
         case 9:
-            let anchor = try! Experience.loadBox()
-            arView.scene.anchors.append(anchor)
+            let anchor = try! SCENEJBICYCLE.loadSceneJ()
+            arView.scene.anchors.append(anchor)	
         case 10:
-            let anchor = try! Bicycle.loadSceneJ()
+            let anchor = try! SCENEKIGNATIUS.loadSceneK()
             arView.scene.anchors.append(anchor)
         case 11:
-            let anchor = try! Experience.loadBox()
+            let anchor = try! SCENELCASH.loadSceneL()
             arView.scene.anchors.append(anchor)
         case 12:
-            let anchor = try!Experience.loadBox()            arView.scene.anchors.append(anchor)
-    
+            let anchor = try! Experience.loadBox()
+            arView.scene.anchors.append(anchor)
     
         default:
             let anchor = try! Experience.loadBox()
@@ -112,7 +112,7 @@ func openARScene() {
 struct Home : View {
     @State var data = [
         
-        SceneData(id: 0, image1: "Burns-1", image2 : "Burns", place1: "Start",place2: "Burns Liabrary Door",title: "Click on this card to start!",clue: "", quotes: "“It was he who first knocked Old Mathers down with a special bicycle-pump which he manufactured himself out of a hollow iron bar”", details: "Welcome! Before you start, here are some instructions. Each point in the maze will have an information card (like this one). The front will have the name of the item along with a reference quote from The Third Policeman. Then, click on the card to see the image, the name, and a description about the location of the point you have to go to. Once you get to the location, press ‘AR Experience’ to find the item with your device and complete tasks to move on to the next point. Now, exit this screen with the ‘x’ button at the top right and swipe to get to the first point on the maze. Good Luck!", anchor: ""),
+        SceneData(id: 0, image1: "Burns-1", image2 : "Burns", place1: "Start",place2: "Burns Library Door",title: "Click on this card to start!",clue: "", quotes: "“It was he who first knocked Old Mathers down with a special bicycle-pump which he manufactured himself out of a hollow iron bar”", details: "Welcome! Before you start, here are some instructions. Each point in the maze will have an information card (like this one). The front will have the name of the item along with a reference quote from The Third Policeman. Then, click on the card to see the image, the name, and a description about the location of the point you have to go to. Once you get to the location, press ‘AR Experience’ to find the item with your device and complete tasks to move on to the next point. Now, exit this screen with the ‘x’ button at the top right and swipe to get to the first point on the maze. Good Luck!", anchor: ""),
         
         SceneData(id: 1, image1: "mazeCover1", image2 : "Maze", place1: "Point A",place2: "Labyrinth", title: "Bicycle Pump", clue:"Find the Bicycle Pump",quotes: "“I knew that old Mathers had been felled by an iron bicycle-pump, hacked to death with a heavy spade and then securely buried in a field.”", details: "On September 11, 2003, a memorial labyrinth was dedicated to the 22 Boston College alumni lost in the 9/11 tragedy. The circle, a perfect form, can be seen as symbolizing eternity, the universe, the repetition of the seasons, the cosmos—the overall perfect plan of the divine. The path through the labyrinth constitutes the longest possible way to arrive at the center. It is important not to hurry the experience, but to submit to its structure and discipline.", anchor: "bikepump"),
         

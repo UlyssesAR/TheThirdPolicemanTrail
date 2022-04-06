@@ -1,0 +1,37 @@
+[
+  {
+    "libraryIdentifier" : "5df2db8ba6ee1847c922adab78c9404e",
+    "format" : "model",
+    "displayName" : "Sheep.usdz"
+  },
+  {
+    "libraryIdentifier" : "1f7251790eaaa6a67f385cfca5e3380b",
+    "format" : "model",
+    "displayName" : "Flann Cartoon_Rev.usdz"
+  },
+  {
+    "libraryIdentifier" : "245f71dc01cb8163aa99709915387fd0",
+    "format" : "model",
+    "displayName" : "jigsaw_05.usdz"
+  },
+  {
+    "libraryIdentifier" : "88e9ffa42da75daf49f0825bd63f6262",
+    "format" : "audio",
+    "displayName" : "Sheep bleat.mp3"
+  },
+  {
+    "libraryIdentifier" : "caca2841009ae5d072b3a1b39ef4ae6c",
+    "format" : "audio",
+    "displayName" : "particles 2.mp3"
+  },
+  {
+    "libraryIdentifier" : "f7e946e159e6fb51bdd2b412cfa71e8f",
+    "format" : "audio",
+    "displayName" : "particle-molecule twinkle.mp3"
+  },
+  {
+    "libraryIdentifier" : "54fbb21aa8b9f0b064780560ea2e8274",
+    "format" : "audio",
+    "displayName" : "angelic voices.mp3"
+  }
+]
